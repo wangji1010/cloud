@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cloud-api-commons" />
+        <module name="cloud-comsumer-consul-80" />
+        <module name="cloud-consumer-feign-hystix-order-80" />
+        <module name="cloud-consumer-feign-order-80" />
+        <module name="cloud-consumer-hystrix-dashboard-9001" />
+        <module name="cloud-consumer-order-80" />
+        <module name="cloud-consumer-zk-order-80" />
+        <module name="cloud-eureka-server-7001" />
+        <module name="cloud-eureka-server-7002" />
+        <module name="cloud-gateway-9527" />
+        <module name="cloud-provider-hystrix-payment-8001" />
+        <module name="cloud-provider-payment-8001" />
+        <module name="cloud-provider-payment-8002" />
+        <module name="cloud-provider-payment-8004" />
+        <module name="cloud-providerconsul-payment-8006" />
+        <module name="cloudalibaba-config-nacos-client-3377" />
+        <module name="cloudalibaba-consumer-nacos-order-80" />
+        <module name="cloudalibaba-consumer-nacos-order-84" />
+        <module name="cloudalibaba-provider-payment-9001" />
+        <module name="cloudalibaba-provider-payment-9002" />
+        <module name="cloudalibaba-provider-payment-9003" />
+        <module name="cloudalibaba-provider-payment-9004" />
+        <module name="cloudalibaba-sentinel-service-8401" />
+        <module name="seata-order-service-2001" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

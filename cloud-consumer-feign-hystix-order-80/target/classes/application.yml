@@ -1,0 +1,23 @@
+server:
+  port: 800
+
+spring:
+  application:
+    name: OrderHystrixMain80
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7002.com:7002/eureka/,http://eureka7001.com:7001/eureka/
+    register-with-eureka: false
+    #设置超s的时间
+ribbon:
+  ReadTimeout: 5000
+  ConnectTimeout: 5000
+logging:
+  level:
+    #feign 日志 以什么级别监控哪个接口打印输出日志
+    com.wwjj.springcloud.service.PaymentFeignService: debug
+feign:
+  hystrix:
+    enabled: true

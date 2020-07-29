@@ -1,0 +1,30 @@
+server:
+  port: 8401
+spring:
+  application:
+    name: cloudalibaba-sentinel-service
+  cloud:
+    nacos:
+      discovery:
+#        配置nacos服务注册中心的地址
+        server-addr: localhost:8848
+    sentinel:
+      transport:
+#        配置sentinel   dashboard的地址
+        dashboard: localhost:8080
+        port: 8179
+#        持久化sentinel配置导nacos，规则配置
+      datasource:
+        ds1:
+          nacos:
+            server-addr: localhost:8848
+            dataId: cloudalibaba-sentinel-service
+            groupId: DEFAULT_GROUP
+            data-type: json
+            rule-type: flow
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
